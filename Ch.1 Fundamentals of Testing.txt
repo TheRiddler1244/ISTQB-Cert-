@@ -1,0 +1,180 @@
+Learning objectives 
+	1. Remember
+	2. Understand
+	3. Apply
+	4. Analyze
+
+Understand:
+	1.1
+		LO-1.1.1 
+			Describe, with examples, the way in which a defect in software 
+			can cause harm to a person, to the environment or to a company
+		LO-1.1.2
+			Distinguish between the root cause of a defect and its effects
+		LO-1.1.3
+			Give reasons why testing is necessary by giving examples
+		LO-1.1.4
+			Describe why testing is part of quality assurance and give 
+			examples of how testing contributes to higher quality
+		LO-1.1.5
+			Explain and compare the terms error, defect, fault, failure, 
+			and the corresponding terms mistake and bug, using examples 
+	1.2
+		LO-1.2.1 	
+			Recall the common objectives of testing 
+		LO-1.2.2 	
+			Provide examples for the objectives of testing in different 
+			phases of the software life cycle 
+		LO-1.2.3  	
+			Differentiate testing from debugging 
+	1.3	
+		LO-1.3.1 	
+			Explain the seven principles in testing  
+	1.4
+		LO-1.4.1 	
+			Recall the five fundamental test activities and respective 
+			tasks from planning to closure  
+	1.5
+		LO-1.5.1 	
+			Recall the psychological factors that influence the success 
+			of testing 
+		LO-1.5.2 	
+			Contrast the mindset of a tester and of a developer
+
+
+================================================
+=   1.1 Why is Testing Necessary? 20 minutes   =
+================================================
+
+Terms:
+	Bug, defect, error, failure, fault, mistake, quality, risk 
+
+1.1.1 	
+Software Systems Context 
+	Software systems are an integral part of life, from business applications 
+	(e.g., banking) to consumer products (e.g., cars). Most people have had an 
+	experience with software that did not work as expected. Software that does 
+	not work correctly can lead to many problems, including loss of money, time 
+	or business reputation, and could even cause injury or death.  
+
+1.1.2 	
+Causes of Software Defects (K2) 
+	A human being can make an error (mistake), which produces a defect 
+	(fault, bug) in the program code, or in a document. If a defect in code 
+	is executed, the system may fail to do what it should do (or do something 
+	it shouldn’t), causing a failure. Defects insoftware, systems or documents 
+	may result in failures, but not all defects do so.  
+ 
+	Defects occur because human beings are fallible and because there is time 
+	pressure, complex code, complexity of infrastructure, changing 
+	technologies, and/or many system interactions. 
+ 
+	Failures can be caused by environmental conditions as well.  For example, 
+	radiation, magnetism, electronic fields, and pollution can cause faults 
+	in firmware or influence the execution of software by changing the 
+	hardware conditions. 
+
+1.1.3 	
+Role of Testing in Software Development, Maintenance and Operations (K2) 
+	Rigorous testing of systems and documentation can help to reduce the risk 
+	of problems occurring during operation and contribute to the quality of the 
+	software system, if the defects found are corrected before the system is 
+	released for operational use. 
+ 
+	Software testing may also be required to meet contractual or legal 
+	requirements, or industry-specific standards. 
+
+1.1.4 	
+Testing and Quality (K2) 
+	With the help of testing, it is possible to measure the quality of software 
+	in terms of defects found, for both functional and non-functional software 
+	requirements and characteristics (e.g., reliability, usability, efficiency, 
+	maintainability and portability). For more information on non-functional 
+	testing see Chapter 2; for more information on software characteristics 
+	see ‘Software Engineering – Software Product Quality’ (ISO 9126). 
+
+	Testing can give confidence in the quality of the software if it finds few 
+	or no defects. A properly designed test that passes reduces the overall 
+	level of risk in a system. When testing does find defects, the quality of 
+	the software system increases when those defects are fixed. 
+
+	Lessons should be learned from previous projects. By understanding the root 
+	causes of defects found in other projects, processes can be improved, 
+	which in turn should prevent those defects from reoccurring and, as a 
+	consequence, improve the quality of future systems. This is an aspect 
+	of quality assurance.  
+
+	Testing should be integrated as one of the quality assurance activities 
+	(i.e., alongside development standards, training and defect analysis). 
+
+1.1.5 	
+How Much Testing is Enough? (K2) 
+	Deciding how much testing is enough should take account of the level of 
+	risk, including technical, safety, and business risks, and project 
+	constraints such as time and budget.  Risk is discussed further in 
+	Chapter 5. 
+
+	Testing should provide sufficient information to stakeholders to make 
+	informed decisions about the release of the software or system being
+	tested, for the next development step or handover to customers.  
+
+=============================================
+=      1.2 What is Testing? 30 minutes      =
+=============================================
+
+Terms:
+	Debugging, requirement, review, test case, testing, test objective 
+
+Background 
+	A common perception of testing is that it only consists of running tests, 
+	i.e., executing the software. This is part of testing, but not all of the 
+	testing activities. 
+ 
+	Test activities exist before and after test execution.  These activities 
+	include planning and control, choosing test conditions, designing and 
+	executing test cases, checking results, evaluating exit criteria, reporting 
+	on the testing process and system under test, and finalizing or completing 
+	closure activities after a test phase has been completed. Testing also 
+	includesreviewing documents (including source code) and conducting static 
+	analysis.  
+ 
+	Both dynamic testing and static testing can be used as a means for achieving 
+	similar objectives, and will provide information that can be used to improve 
+	both the system being tested and the development and testing processes.  
+ 
+	Testing can have the following objectives: 
+	o	Finding defects 
+	o	Gaining confidence about the level of quality 
+	o 	Providing information for decision-making 
+	o 	Preventing defects 
+
+	The thought process and activities involved in designing tests early in 
+	the life cycle (verifying the test basis via test design) can help to 
+	prevent defects from being introduced into code. Reviews of documents 
+	(e.g., requirements) and the identification and resolution of issues also 
+	help to prevent defects appearing in the code. 
+
+	Different viewpoints in testing take different objectives into account. 
+	For example, in development testing (e.g., component, integration and 
+	system testing), the main objective may be to cause as many failures as 
+	possible so that defects in the software are identified and can be fixed. 
+	In acceptance testing, the main objective may be to confirm that the system 
+	works as expected, to gain confidence that it has met the requirements. In 
+	some cases the main objective of testing may be to assess the quality of 
+	the software (with no intention of fixing defects), to give information to 
+	stakeholders of the risk of releasing the system at a given time. 
+	Maintenance testing often includes testing that no new defects have been 
+	introduced during development of the changes. During operational testing, 
+	the main objective may be to assess system characteristics such as 
+	reliability or availability.  
+
+	Debugging and testing are different. Dynamic testing can show failures that 
+	are caused by defects. 
+
+	Debugging is the development activity that finds, analyzes and removes the 
+	cause of the failure. Subsequent re-testing by a tester ensures that the 
+	fix does indeed resolve the failure. The responsibility for these 
+	activities is usually testers test and developers debug.  
+
+	The process of testing and the testing activities are explained 
+	in Section 1.4. 
